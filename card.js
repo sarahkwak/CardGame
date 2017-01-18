@@ -13,6 +13,13 @@ var shuffleCard = function(card) {
 	return card
 }
 
+var readyCard = function() {
+	for (var i= 0; i<53; i++){
+		var card_id = 'card_' + i;
+		$('.card-container').append("<div id= "+card_id+" ><img onclick=cardClick("+i+") src='cardpack/back.png'></div>")
+	}
+}
+
 var score = 0;
 var flip_count = 0;
 var thisCard = shuffleCard(card);
@@ -107,6 +114,7 @@ var gameInitializer = function() {
 }
 
 $(document).ready(function() {
+	readyCard();
 	$('.container div').unbind("click")
 	$(".start").click(function(){
 		console.log("START GAME")

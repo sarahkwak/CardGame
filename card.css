@@ -22,7 +22,7 @@ button:focus {outline:0;}
 button {
 	width: 100px;
 	height: 100px;
-	background-color: red;
+	background-color: #ff3399;
 	border-radius: 50%;
 	border: none;
 	color: white;
@@ -32,12 +32,12 @@ button {
 
 }
 button:hover { 
-	background-color: purple;
+	background-color: #ff99cc;
 	border: none;
 }
 .game-board {
 	width: 75%;
-	background-color: green;
+	background-color: #00cc00;
 	float: right;
 }
 .hidden {
