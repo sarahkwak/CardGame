@@ -1,0 +1,56 @@
+.container {
+	margin-top: 30px;
+	width: 98%;
+	background-color: green;
+}
+.player-board {
+	width: 20%;
+	float:left;
+}
+.score-board, .time-board{
+	font-size: 2em;
+	text-align:center;
+}
+button:focus {outline:0;}
+button {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	font-size: 2em;
+	position: relative;
+
+}
+button:hover { 
+	background-color: purple;
+	border: none;
+}
+.game-board {
+	width: 75%;
+	background-color: green;
+	float: right;
+}
+.hidden {
+	display: none;
+	left: 20%;
+	text-align: center;
+}
+.card-container div {
+	display: inline-block;
+	margin:0.5%;
+	max-width:10%;
+	max-height:10%;
+	overflow: hidden;
+}
+img {
+	width: 85px;
+	height: 105px;
+}
+.result {
+	font-size: 3em;
+	color: red;
+	animation: blinker 1s cubic-bezier(.1, 0, 0.5, 0.5) infinite alternate;  
+}
+@keyframes blinker { to { opacity: 0; } }
