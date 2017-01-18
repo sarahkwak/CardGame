@@ -14,7 +14,7 @@ var shuffleCard = function(card) {
 }
 
 var readyCard = function() {
-	for (var i= 0; i<53; i++){
+	for (var i= 0; i<52; i++){
 		var card_id = 'card_' + i;
 		$('.card-container').append("<div id= "+card_id+" ><img onclick=cardClick("+i+") src='cardpack/back.png'></div>")
 	}
