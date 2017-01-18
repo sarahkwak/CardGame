@@ -18,6 +18,7 @@ var flip_count = 0;
 var thisCard = shuffleCard(card);
 
 var startGame = function() {
+	$('.card-container div').css("pointer-events", "auto")
   display = document.querySelector('#time');
   startTimer(60*3, display);
 }
@@ -57,7 +58,7 @@ var cardClick = function(id) {
 var showCard = function(current_card, id) {
 	var el = document.getElementById("card_" + id);
   el.firstChild.src = "cardpack/"+current_card + ".png";
-  el.style.height = '140px'
+  el.style.height = '105px'
 }
 var verifyMatching = function(flip_count, card, id) {
 	if (flip_count > 0){
@@ -106,6 +107,7 @@ var gameInitializer = function() {
 }
 
 $(document).ready(function() {
+	$('.container div').unbind("click")
 	$(".start").click(function(){
 		console.log("START GAME")
 		startGame();
